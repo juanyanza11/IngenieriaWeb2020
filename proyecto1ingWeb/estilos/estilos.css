@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: 'Abel', sans-serif;
+}
+
+header.cabeceraHome{
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    width: 90%;
+    padding: 1em;
+    margin: 0 auto;
+    border-bottom: 5px solid black;
+}
+header.cabeceraHome img{
+    display: inline-block;
+    padding-left: 18em;
+    vertical-align: middle;
+
+}
+header.cabeceraHome h1{
+    color: black;
+    padding-left: 1em;
+    font-size: 2em;
+    width: 60%;
+    display: inline-block;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+header.cabeceraHome nav{
+    display: inline;
+    white-space: normal;
+    text-shadow: white 2px 2px 7px;
+}
+header.cabeceraHome a{
+    display: inline;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    background-color: #000000;
+    /*padding-bottom: 1px;*/
+    text-decoration: none;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 87.5%;
+    padding: 2em;
+    display: block;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: 0.78s;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+/*BOTONES*/
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    padding: 10 px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 100%;
+}
+ul.slider li:target{
+    opacity: 1;
+}
+
+ul.menu{
+    padding-left: 33em;
+    display: inline-block;
+}
+
+article.slider{
+    background-color: white;
+    border-bottom: solid black 4px;
+}
